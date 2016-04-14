@@ -1,0 +1,50 @@
+body {
+   font-family:Lora, sans-serif, Tahoma;
+   font-size:14px;
+}
+
+
+.container {
+    width:100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.row {
+   width:100%;
+   clear:both;
+   padding:0 15px;
+}
+
+.top-content {
+	background-image:url("images/food.jpg");
+	height:500px;
+    background-attachment: fixed;
+}
+
+.home-page-icons{
+    height:300px;
+}
+
+
+#restaurant-menu{
+    left:100px;
+    width:10px;
+    height:50px;
+	background:url("images/icons.png") 200px 0;
+}
+
