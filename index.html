@@ -1,52 +1,168 @@
 <!DOCTYPE html>
     <html lang="en-US">
     <head>
-    	<title>Website</title>
-    	<meta name="description" content="Our restaurant description">
-    	<meta name="author" content="Website">
-    	<meta name="robots" content="index, follow">
+        <title>Website</title>
+        <meta name="description" content="Our restaurant description">
+        <meta name="author" content="Website">
+        <meta name="robots" content="index, follow">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    </head>
-<body>
-	<header class="container">
-	    <div class="row">
-		    <div id="logo">
-             Restaurant
-		    </div>
-		    <nav>
-			    <ul id="nav-menu">
-				    <li>Home</li>
-				    <li>Menu</li>
-				    <li>Gallery</li>
-				    <li>Reservation</li>
-				    <li>Contact</li>
-			    </ul>
-		    </nav>
-		</div>
-	</header>
-	<main class="container">
-		<section class="row top-content">
-		    <>
-		</section>
-		<section class="home-page-icons">
-		    <div class="row">
-		        <ul class="navlist">
-		            <li class="col-3" id="restaurant-menu"></li>
-		            <li id="restaurant-gallery"> </li>
-		        </ul>
-            </div>
-		</section>
-	</main>
-
-	<footer class="container">
-		
-	</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-</body>
-
-</html>
+        <link href="https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        </head>
+        <body>
+            <header class="container logo-menu">
+            	<div class="row">
+            	    <div class="col-4" id="logo">
+            			Restaurant
+            		</div>
+            		<div class="col-8">
+            			<nav>
+            				<ul id="nav-menu">
+            					<li>Home</li>
+            					<li><a href="menu.html">Menu</a></li>
+            					<li>Gallery</li>
+            					<li>Reservation</li>
+            					<li>About us</li>
+            					<li>Contact</li>
+            				</ul>
+            			</nav>
+            		</div>        
+            	</div>
+            </header>
+            <main class="container">
+                <section class="row top-content">
+                     <div class="col-1"></div>
+                     <div class="col-4">
+                       
+                    </div>
+                </section>   
+                <section class="container">
+                    <div class="row">
+                        <div class="home-page-icons">
+                            <div class="col-3">
+                                <a href="#"><i class="fa fa-bars fa-3x" aria-hidden="true">Menu</i>
+                                </a>
+                            </div>
+                            <div class="col-3"> 
+                                <a href="#"><i class="fa fa-camera fa-3x" aria-hidden="true">Gallery</i>
+                                </a>
+                            </div>
+                            <div class="col-3"> 
+                                <span>Menu</span>
+                            </div>
+                            <div class="col-3"> 
+                                <span>Menu</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container about-us-home">
+                    <div class="row ">
+                        <div class="col-6">
+                            <img class="img-width box-shadow" src="images/restaurant.jpg">
+                        </div>
+                        <div class="col-6">
+                            <div class="about-us-info box-shadow">
+                	            <h2>About our restaurant</h2>
+                	            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+                	            </p>
+                	        </div>
+                	    </div>
+                  	</div>
+                </section>
+                <section class="container blog-home">
+                    <div class="row">
+                        <h2>Our Blog</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                           <div class="blog-section box-shadow">
+                                <img class="img-width" src="images/sushi.jpg">
+                                <div class="button-blog">
+                                    <a href="#" class="btn blog-section-btn box-shadow">See more</a>
+                                </div>
+                                <div class="blog-section-text">
+                                    <h6>Theme 10</h6>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    </p>
+                                </div>
+                           </div>
+                        </div>          
+                        <div class="col-4">
+                           <div class="blog-section box-shadow">
+                                <img class="img-width" src="images/sushi.jpg">
+                                <div class="blog-section-text">
+                                    <h6>Theme 10</h6>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+                                    </p>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="blog-section box-shadow">
+                                <img class="img-width" src="images/sushi.jpg">
+                                <div class="blog-section-text">
+                                    <h6>Theme 10</h6>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    </p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>   	
+                </section>
+            </main>
+            <footer class="container">
+                <div class="footer-links">
+                    <div class="row">
+                    <div class="col-2">
+                        <h5>Find us</h5>
+                        <ul class="social">
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h5>Information</h5>
+                        <ul class="information">
+                            <li>About us</li>
+                            <li>Blog</li>
+                            <li>Gallery</li>
+                            <li>Reservations</li>  
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h5>Newsletter</h5>
+                        <form action="" class="">
+                        <input type="email" placeholder="E-mail">
+                        <input type="button" value="Send">
+                        </form>
+                    </div>
+                    <div class="col-2">
+                        <h5>Opening hours</h5>
+                            <ul>
+                                <li>Monday-Friday 11:00 - 24:00</li>
+                                <li>Saturday-Sunday 14:00 - 24:00</li>
+                            </ul>
+                    </div>
+                    <div class="col-3">
+                        <h5>Contact us</h5>
+                           <ul>
+                               <li>Bath, UK</li>
+                               <li>0711 111 111</li>
+                               <li>email@email.com</li>
+                           </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <span>Created by Webpage</span>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        </body>
+    </html>

@@ -1,5 +1,294 @@
+/*Main*/
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.2em;
+}
+
 #nav-menu li{
 	display:inline-block;
-	font-size:24px;
+	font-size:1.2rem;
+	padding:.5rem 1rem;
+	border:1px solid $color-5;
+	border-radius:3px;
+	background-color:$color-5;
+	color:$color-6;
+}
+
+
+/*Home page icons*/
+
+.home-page-icons{
+	color:$color-2;
+}
+
+
+/*About us home*/
+
+.about-us-home{
+  background-image: -moz-repeating-linear-gradient(transparent, transparent 1px, rgb(196,120,48) 25px, rgb(135,114,63) 25px);
+  background-image: -webkit-repeating-linear-gradient(rgb(196,120,48) 20%, rgb(135,114,63) 1%);
+  background-image: -o-repeating-linear-gradient(rgb(196,120,48) 20%, rgb(135,114,63) 1%);
+  background-image: repeating-linear-gradient(-45deg, rgba(15,15,15,.6), rgba(15,15,15,.6) .5em, rgba(135,114,63, .7) .5em, rgba(135,114,63,.7) .6em);
+  padding:1em 0;
+  overflow:hidden;
+}
+
+.about-us-info {
+	background:$color-7;
+    position:relative;
+	top:2.5rem;
+	left:-3rem;
+	color:$color-5;
+	border:1px solid $color-6;
+	margin:auto;
+	padding:1em;
+    text-align:justify;
+    font-size:1.1em;
+    line-height:1.2em;
+}
+
+.about-us-info h2 {
+	text-align:center;
+	padding-bottom:1em;
+}
+
+
+/*Interface*/
+
+.triangle{
+	content:"";
+	position:relative;
+	display:block;
+	margin:auto;
+	width:.55em;
+	height:.5em;
+	border-left:3px solid $color-1;
+	border-bottom:3px solid $color-1;
+	border-radius:3px;
+	border-shadow: 0px 2px 5px 0px $color-3;
+	transform:rotate(-45deg);
+}
+
+.line-after{
+	content:"";
+	position:relative;
+	display:block;
+    width:20px;
+    height:1px;
+    margin:auto;
+    margin-top:.3em;
+    transition-property:width;
+    transition-duration:1s;
+ }
+
+.line-after:hover{
+	width:80px;
+}
+
+/* Blog Home page*/
+
+.blog-home{
+	background:#FFF;
+	overflow:hidden;
+	padding-bottom:5em;
+}
+
+.blog-home h2 {
+	text-align:center;
+	padding:1em;
+	color:$color-4;
+	font-weight:bold;
+	transition-property:color;
+	transition-duration:1s;
+}
+
+.blog-home h2:hover{
+	color:$color-1;
+}
+
+
+
+.blog-home h2:after{
+     @extend .triangle;
+}
+
+.about-us-info h2:after{
+	@extend .triangle;
+}
+
+.blog-section{
+    margin: 0 .1em 1em .1em;
+    background-color: $color-6;
+}
+
+.blog-section h6 {
+	text-align:center;
+	padding-bottom:.5em;
+}
+
+.button-blog{
+	position:relative;
+}
+
+.blog-section-btn {
+	position:absolute;
+	top:-7em;
+	left:30%;
+}
+
+.blog-section-btn:hover{
+	display:block;
+}
+
+.blog-section-text{
+	padding:1em 2em;
+	text-align:center;
+    text-align: justify;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	color:$color-2;
+	font-size:1.1em;
+}
+
+
+/*Footer*/
+.footer-links{
+	padding:2em;
+	line-height:1.5em;
+	height:6rem;
+	background-color:#0F0F0F;
+	color:#F1F1F1;
+	opacity:0.9;
+	overflow:hidden;
+}
+
+.footer-bottom{
+    background-color:#0F0F0F;
+	padding:1em;
+	overflow:hidden;
+}
+
+
+/*Buttons*/
+
+.btn{
+    border:0;
+    background-color:$color-5;
+	padding:.9em 1.3em;
+	border-radius:5px;
+	color:$color-6;
+	font-size:1.5em;
+}
+
+/*Menu*/
+
+.menu-restaurant{
+	background-color:$color-3;
+	margin:1em 0;
+	opacity:.8;
+}
+
+.menu-restaurant h2 {
+    position:relative;
+    width:28px;
+    height:28px;
+    margin:auto;
+    margin-top:15px;
+	font-weight:bold;
+	padding:2rem;
+	border:2px dotted $color-6;
+	transform:rotate(45deg);
+}
+
+.menu-restaurant span{
+    position:absolute;
+    left:0px;
+    transform:rotate(-45deg);
+}
+
+.menu-restaurant-items li {
+    color:$color-6;
+    font-size:1.8em;
+	padding:.9em 0;
+	text-align:center;
+}
+
+.menu-restaurant-items li:after{
+	@extend .line-after;
+    background-color:$color-6;
+}
+
+.menu-main-text {
+	margin:1em 0;
+	color:$color-5;
+}
+
+.menu-main-text h3:after{
+   @extend .line-after;
+   background-color:$color-4;
+}
+
+.menu-main-text h1,
+.menu-main-text h3{
+	padding:1rem 0;
+	text-align:center;
+	color:$color-4;
+}
+
+.menu-item{
+	position:relative;
+	padding-top:2em;
+}
+
+.menu-item-title{
+	font-size:1.5em;
+	color:$color-5;
+	border-bottom:1px dotted $color-1;
+}
+
+.menu-item-description{
+	color:$color-1;
+	padding:0.1em 0 1em 0;
+}
+
+.menu-item-price{
+	font-size:1.5em;
+    font-style:italic;
+}
+
+.active-menu{
+	color:$color-5;
+}
+
+.inactive-menu{
+	color:$color-6;
+}
+
+.active-menu-items{
+	display:block;
+}
+
+.inactive-menu-items{
+	display:none;
 }
 

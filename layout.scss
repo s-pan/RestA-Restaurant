@@ -1,11 +1,23 @@
+$color-1: #87723F;
+$color-2: #2C3242;
+$color-3: #0F0F0F;
+$color-4: #42475C;
+$color-5: #C47830;
+$color-6: #F1F1F1;
+$color-7: #FFFFFF;
+
+
 body {
    font-family:Lora, sans-serif, Tahoma;
    font-size:14px;
+   color:$color-6;
+   background:$color-6;
 }
 
 
 .container {
     width:100%;
+    clear:both
 }
 
 @media (min-width: 768px) {
@@ -25,19 +37,38 @@ body {
 }
 
 .row {
-   width:100%;
-   clear:both;
-   padding:0 15px;
+    width:100%;
+    box-sizing:border-box;
+    padding: 0 15px;
+    clear:both
 }
 
 .top-content {
 	background-image:url("images/food.jpg");
+	background-size:100%;
+	background-repeat: no-repeat;
 	height:500px;
     background-attachment: fixed;
-}
+  }
 
 .home-page-icons{
-    height:300px;
+    height:100px;
+}
+
+
+#logo{
+	font-size:3em;
+	overflow:hidden;
+}
+
+.nav-menu{
+	padding:.5em 0;
+}
+
+.logo-menu{
+	background-color:$color-3;
+	overflow:hidden;
+	padding:1em 0;
 }
 
 
@@ -46,5 +77,13 @@ body {
     width:10px;
     height:50px;
 	background:url("images/icons.png") 200px 0;
+}
+
+.img-width{
+	width:100%;
+}
+
+.box-shadow{
+    box-shadow: 0px 2px 5px 0px $color-3;
 }
 

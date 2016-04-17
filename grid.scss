@@ -1,8 +1,12 @@
-$col-width: 8.33333333%;
+$col-width: 8.333333%;
 
 @for $i from 1 to 13 {
 	.col-#{$i} {
 	    width: ($col-width * $i);
 	    float:left;
+	    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+	    padding:5px;
 	}
 }
