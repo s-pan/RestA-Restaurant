@@ -46,10 +46,14 @@ a {
   text-decoration: none;
   color: inherit; }
 
+input,
+textarea {
+  outline: none; }
+
 body {
   font-family: Lora, sans-serif, Tahoma;
   font-size: 14px;
-  color: #F1F1F1;
+  color: #87723F;
   background: #F1F1F1; }
 
 .container {
@@ -104,6 +108,9 @@ body {
 
 .box-shadow {
   box-shadow: 0px 2px 5px 0px #0F0F0F; }
+
+input[type=button] {
+  cursor: pointer; }
 
 .col-1 {
   width: 8.33333%;
@@ -223,11 +230,7 @@ h6 {
 #nav-menu li {
   display: inline-block;
   font-size: 1.2rem;
-  padding: .5rem 1rem;
-  border: 1px solid #C47830;
-  border-radius: 3px;
-  background-color: #C47830;
-  color: #F1F1F1; }
+  padding-top: 1em; }
 
 /*Home page icons*/
 .home-page-icons {
@@ -235,45 +238,46 @@ h6 {
 
 /*About us home*/
 .about-us-home {
-  background-image: -moz-repeating-linear-gradient(transparent, transparent 1px, #c47830 25px, #87723f 25px);
-  background-image: -webkit-repeating-linear-gradient(#c47830 20%, #87723f 1%);
-  background-image: -o-repeating-linear-gradient(#c47830 20%, #87723f 1%);
-  background-image: repeating-linear-gradient(-45deg, rgba(15, 15, 15, 0.6), rgba(15, 15, 15, 0.6) 0.5em, rgba(135, 114, 63, 0.7) 0.5em, rgba(135, 114, 63, 0.7) 0.6em);
   padding: 1em 0;
   overflow: hidden; }
 
 .about-us-info {
-  background: #FFFFFF;
+  background: #87723F;
   position: relative;
-  top: 2.5rem;
+  top: .3rem;
   left: -3rem;
-  color: #C47830;
+  color: #F1F1F1;
   border: 1px solid #F1F1F1;
   margin: auto;
-  padding: 1em;
+  padding: 1em .5em;
   text-align: justify;
   font-size: 1.1em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  overflow: hidden; }
 
 .about-us-info h2 {
   text-align: center;
-  padding-bottom: 1em; }
+  padding-bottom: .5em; }
+
+.about-us-info h2:after {
+  border-bottom-color: #2C3242; }
 
 /*Interface*/
-.triangle, .blog-home h2:after, .about-us-info h2:after {
+.triangle, .about-us-info h2:after, .blog-home h2:after {
   content: "";
   position: relative;
   display: block;
   margin: auto;
   width: .55em;
   height: .5em;
-  border-left: 3px solid #87723F;
-  border-bottom: 3px solid #87723F;
-  border-radius: 3px;
+  border-left: 3px solid;
+  border-bottom: 3px solid;
+  border-radius: 5px;
   border-shadow: 0px 2px 5px 0px #0F0F0F;
   transform: rotate(-45deg); }
 
-.line-after, .menu-restaurant-items li:after, .menu-main-text h3:after {
+.line-after, .menu-restaurant-items li:after, .menu-main-text h3:after, .contact-page-form h1:after,
+.contact-page-form h2:after {
   content: "";
   position: relative;
   display: block;
@@ -284,7 +288,8 @@ h6 {
   transition-property: width;
   transition-duration: 1s; }
 
-.line-after:hover, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after {
+.line-after:hover, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after, .contact-page-form h1:hover:after,
+.contact-page-form h2:hover:after {
   width: 80px; }
 
 /* Blog Home page*/
@@ -350,11 +355,28 @@ h6 {
 /*Buttons*/
 .btn {
   border: 0;
-  background-color: #C47830;
-  padding: .9em 1.3em;
-  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 1rem;
   color: #F1F1F1;
-  font-size: 1.5em; }
+  border-radius: 3px;
+  margin: auto; }
+
+.btn-default {
+  background-color: #C47830;
+  border-bottom: 2px solid #87723F; }
+
+.btn-default:hover {
+  background-color: #87723F;
+  font-style: italic; }
+
+.btn-blue {
+  background-color: #2C3242;
+  text-align: center; }
+
+.btn-blue:hover {
+  background-color: #42475C;
+  font-style: italic; }
 
 /*Menu*/
 .menu-restaurant {
@@ -428,6 +450,51 @@ h6 {
 
 .inactive-menu-items {
   display: none; }
+
+/*Contact*/
+.contact-page-form {
+  margin: 150px; }
+
+.contact-page-form h1:after,
+.contact-page-form h2:after {
+  background-color: #2C3242; }
+
+.contact-address {
+  padding: 1em 0;
+  font-size: 1.2em; }
+
+.form-item {
+  display: block;
+  padding: .5em 0; }
+
+#contact-form input,
+.newsletter-form input {
+  padding: .4em; }
+
+#contact-form label {
+  display: inline-block;
+  width: 5em;
+  font-size: 1.2em; }
+
+#contact-form input,
+#contact-form textarea {
+  width: 30em;
+  padding: .4em;
+  border: 2px solid #87723F;
+  border-radius: 3px; }
+
+.text-textarea {
+  transform: translateY(-5em); }
+
+.contact-page-form {
+  margin-top: 20em; }
+
+.map-location {
+  margin-top: 4em; }
+
+.form-button {
+  margin-left: 6em;
+  cursor: pointer; }
 
 ul li {
   color: #87723F; }

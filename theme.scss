@@ -27,11 +27,7 @@ h6 {
 #nav-menu li{
 	display:inline-block;
 	font-size:1.2rem;
-	padding:.5rem 1rem;
-	border:1px solid $color-5;
-	border-radius:3px;
-	background-color:$color-5;
-	color:$color-6;
+	padding-top:1em;
 }
 
 
@@ -45,31 +41,33 @@ h6 {
 /*About us home*/
 
 .about-us-home{
-  background-image: -moz-repeating-linear-gradient(transparent, transparent 1px, rgb(196,120,48) 25px, rgb(135,114,63) 25px);
-  background-image: -webkit-repeating-linear-gradient(rgb(196,120,48) 20%, rgb(135,114,63) 1%);
-  background-image: -o-repeating-linear-gradient(rgb(196,120,48) 20%, rgb(135,114,63) 1%);
-  background-image: repeating-linear-gradient(-45deg, rgba(15,15,15,.6), rgba(15,15,15,.6) .5em, rgba(135,114,63, .7) .5em, rgba(135,114,63,.7) .6em);
-  padding:1em 0;
-  overflow:hidden;
+    padding:1em 0;
+    overflow:hidden;
 }
 
 .about-us-info {
-	background:$color-7;
+	background:$color-1;
     position:relative;
-	top:2.5rem;
+	top:.3rem;
 	left:-3rem;
-	color:$color-5;
+	color:$color-6;
 	border:1px solid $color-6;
 	margin:auto;
-	padding:1em;
+	padding:1em .5em;
     text-align:justify;
     font-size:1.1em;
     line-height:1.2em;
+    overflow:hidden;
 }
 
 .about-us-info h2 {
 	text-align:center;
-	padding-bottom:1em;
+	padding-bottom:.5em;
+}
+
+.about-us-info h2:after{
+	@extend .triangle;
+	border-bottom-color:$color-2;
 }
 
 
@@ -82,9 +80,9 @@ h6 {
 	margin:auto;
 	width:.55em;
 	height:.5em;
-	border-left:3px solid $color-1;
-	border-bottom:3px solid $color-1;
-	border-radius:3px;
+	border-left:3px solid;
+	border-bottom:3px solid;
+	border-radius:5px;
 	border-shadow: 0px 2px 5px 0px $color-3;
 	transform:rotate(-45deg);
 }
@@ -126,14 +124,8 @@ h6 {
 	color:$color-1;
 }
 
-
-
 .blog-home h2:after{
      @extend .triangle;
-}
-
-.about-us-info h2:after{
-	@extend .triangle;
 }
 
 .blog-section{
@@ -193,12 +185,35 @@ h6 {
 
 .btn{
     border:0;
-    background-color:$color-5;
-	padding:.9em 1.3em;
-	border-radius:5px;
+    display:inline-block;
+    width:100%;
+	padding:1rem 1rem;
 	color:$color-6;
-	font-size:1.5em;
+	border-radius:3px;
+	margin:auto;
 }
+
+.btn-default{
+	background-color:$color-5;
+	border-bottom:2px solid $color-1;
+}
+
+.btn-default:hover{
+	background-color:$color-1;
+	font-style:italic;
+}
+
+.btn-blue{
+	background-color:$color-2;
+	text-align:center;
+}
+
+.btn-blue:hover{
+	background-color:$color-4;
+	font-style:italic;
+}
+
+
 
 /*Menu*/
 
@@ -292,3 +307,60 @@ h6 {
 	display:none;
 }
 
+/*Contact*/
+
+.contact-page-form{
+    margin:150px;
+}
+
+.contact-page-form h1:after,
+.contact-page-form h2:after{
+	@extend .line-after;
+	background-color:$color-2;
+}
+
+.contact-address{
+	padding:1em 0;
+	font-size:1.2em;
+}
+
+.form-item{
+	display:block;
+	padding:.5em 0;
+}
+
+#contact-form input,
+.newsletter-form input{
+	padding:.4em;
+}
+
+#contact-form label{
+	display:inline-block;
+	width:5em;
+	font-size:1.2em;
+}
+
+#contact-form input,
+#contact-form textarea{
+	width:30em;
+	padding:.4em;
+	border:2px solid $color-1;
+    border-radius:3px;
+}
+
+.text-textarea{
+    transform:translateY(-5em);
+}
+
+.contact-page-form{
+	margin-top:20em;
+}
+
+.map-location{
+	margin-top:4em;
+}
+
+.form-button{
+	margin-left:6em;
+	cursor:pointer;
+}
