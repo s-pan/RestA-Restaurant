@@ -24,10 +24,45 @@ h6 {
 	font-size: 1.2em;
 }
 
-#nav-menu li{
+.nav-menu li{
 	display:inline-block;
 	font-size:1.2rem;
-	padding-top:1em;
+	width:auto;
+}
+
+.nav-menu-items{
+	margin:auto;
+}
+
+/*Home page top content*/
+
+.top-content h1{
+	display:block;
+	background-color:$color-6;
+	margin-top:10rem;
+	padding:.5rem;
+	width:90%;
+	text-align:center;
+}
+
+.daily-menu{
+    display:block;
+	background-color:$color-3;
+	color:$color-5;
+	border-radius:2px;
+	opacity:.9;
+	margin:2rem 0 0 5rem;
+}
+
+.daily-menu h3,
+.daily-menu h6 {
+	text-align:center;
+	padding:.5rem;
+}
+
+.daily-menu h3:after{
+	@extend .line-after;
+    background-color:$color-1;
 }
 
 
@@ -41,15 +76,17 @@ h6 {
 /*About us home*/
 
 .about-us-home{
+    position:relative;
     padding:1em 0;
     overflow:hidden;
+    height:auto;
 }
 
 .about-us-info {
 	background:$color-1;
-    position:relative;
-	top:.3rem;
-	left:-3rem;
+	position:relative;
+	top:30%;
+	left:-10%;
 	color:$color-6;
 	border:1px solid $color-6;
 	margin:auto;
@@ -58,6 +95,7 @@ h6 {
     font-size:1.1em;
     line-height:1.2em;
     overflow:hidden;
+ 
 }
 
 .about-us-info h2 {
@@ -129,7 +167,7 @@ h6 {
 }
 
 .blog-section{
-    margin: 0 .1em 1em .1em;
+    margin: 2em;
     background-color: $color-6;
 }
 
@@ -167,7 +205,7 @@ h6 {
 .footer-links{
 	padding:2em;
 	line-height:1.5em;
-	height:6rem;
+	height:auto;
 	background-color:#0F0F0F;
 	color:#F1F1F1;
 	opacity:0.9;
@@ -191,6 +229,10 @@ h6 {
 	color:$color-6;
 	border-radius:3px;
 	margin:auto;
+}
+
+.btn-border{
+	border:1px solid $color-6;
 }
 
 .btn-default{
@@ -332,6 +374,7 @@ h6 {
 #contact-form input,
 .newsletter-form input{
 	padding:.4em;
+	width:100%;
 }
 
 #contact-form label{

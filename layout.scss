@@ -9,7 +9,7 @@ $color-7: #FFFFFF;
 
 body {
    font-family:Lora, sans-serif, Tahoma;
-   font-size:14px;
+   font-size:16px;
    color:$color-1;
    background:$color-6;
 }
@@ -43,6 +43,11 @@ body {
     clear:both
 }
 
+.nav-menu{
+	width:100%;
+	border:1px solid white;
+}
+
 .top-content {
 	background-image:url("images/food.jpg");
 	background-size:100%;
@@ -61,14 +66,10 @@ body {
 	overflow:hidden;
 }
 
-.nav-menu{
-	padding:.5em 0;
-}
 
 .logo-menu{
 	background-color:$color-3;
 	overflow:hidden;
-	padding:1em 0;
 }
 
 

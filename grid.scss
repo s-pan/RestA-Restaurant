@@ -1,7 +1,8 @@
 $col-width: 8.333333%;
 
+
 @for $i from 1 to 13 {
-	.col-#{$i} {
+	.col-xs-#{$i} {
 	    width: ($col-width * $i);
 	    float:left;
 	    -webkit-box-sizing: border-box;
@@ -10,3 +11,43 @@ $col-width: 8.333333%;
 	    padding:5px;
 	}
 }
+
+@media (min-width: 34em) {
+    @for $i from 1 to 13 {
+	    .col-sm-#{$i} {
+	        width: ($col-width * $i);
+	        float:left;
+	        -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	        padding:5px;
+	    }
+    }
+}
+
+@media (min-width: 48em) {
+    @for $i from 1 to 13 {
+	    .col-#{$i} {
+	        width: ($col-width * $i);
+	        float:left;
+	        -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	        padding:5px;
+	    }
+    }
+}
+
+@media (min-width: 62em) {
+    @for $i from 1 to 13 {
+	    .col-lg-#{$i} {
+	        width: ($col-width * $i);
+	        float:left;
+	        -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	        padding:5px;
+	    }
+    }
+}
+
