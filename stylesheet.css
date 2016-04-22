@@ -665,6 +665,9 @@ h6 {
   opacity: 0.9;
   overflow: hidden; }
 
+.footer-links a:hover {
+  color: #F1F1F1; }
+
 .footer-bottom {
   background-color: #0F0F0F;
   padding: 1em;
