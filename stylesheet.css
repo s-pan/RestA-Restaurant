@@ -56,6 +56,9 @@ body {
   color: #87723F;
   background: #F1F1F1; }
 
+main {
+  padding-top: 3.5rem; }
+
 .container {
   width: 100%;
   clear: both; }
@@ -76,22 +79,28 @@ body {
   clear: both; }
 
 .nav-menu {
-  width: 100%;
-  border: 1px solid white; }
+  width: 100%; }
 
 .top-content {
+  background-color: #F1F1F1;
+  overflow: hidden; }
+
+.welcome {
   background-image: url("images/food.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 500px;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-origin: content-box;
+  height: 35rem;
+  margin-top: 1em; }
 
 .home-page-icons {
   height: 100px; }
 
 #logo {
   font-size: 3em;
-  overflow: hidden; }
+  overflow: hidden;
+  color: #F1F1F1; }
 
 .logo-menu {
   background-color: #0F0F0F;
@@ -515,10 +524,21 @@ h5 {
 h6 {
   font-size: 1.2em; }
 
+/*Header*/
+.logo-menu {
+  border-bottom: 2px solid #C47830;
+  position: fixed;
+  z-index: 10000; }
+
 .nav-menu li {
   display: inline-block;
   font-size: 1.2rem;
-  width: auto; }
+  width: auto;
+  padding: 1rem;
+  color: #F1F1F1; }
+
+.nav-menu li:after {
+  background-color: #87723F; }
 
 .nav-menu-items {
   margin: auto; }
@@ -527,18 +547,36 @@ h6 {
 .top-content h1 {
   display: block;
   background-color: #F1F1F1;
-  margin-top: 10rem;
+  transform: translateY(8rem);
+  margin: auto;
   padding: .5rem;
-  width: 90%;
-  text-align: center; }
+  width: 95%;
+  text-align: center;
+  color: #2C3242; }
+
+.daily-menu:before {
+  content: "";
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 5em;
+  height: 5em;
+  border-left: 3px solid;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  border-shadow: 0px 2px 5px 0px #0F0F0F;
+  transform: rotate(135deg);
+  top: -3.5em; }
 
 .daily-menu {
+  position: relative;
   display: block;
   background-color: #0F0F0F;
   color: #C47830;
   border-radius: 2px;
-  opacity: .9;
-  margin: 2rem 0 0 5rem; }
+  margin: 5rem 0 0 5rem;
+  border: 3px solid #000;
+  outline: 10px solid #C47830; }
 
 .daily-menu h3,
 .daily-menu h6 {
@@ -562,11 +600,10 @@ h6 {
 .about-us-info {
   background: #87723F;
   position: relative;
-  top: 30%;
+  top: 2rem;
   left: -10%;
   color: #F1F1F1;
   border: 1px solid #F1F1F1;
-  margin: auto;
   padding: 1em .5em;
   text-align: justify;
   font-size: 1.1em;
@@ -579,6 +616,14 @@ h6 {
 
 .about-us-info h2:after {
   border-bottom-color: #2C3242; }
+
+.chef-img img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem; }
+
+.chef-name {
+  font-size: 2rem; }
 
 /*Interface*/
 .triangle, .about-us-info h2:after, .blog-home h2:after {
@@ -594,8 +639,8 @@ h6 {
   border-shadow: 0px 2px 5px 0px #0F0F0F;
   transform: rotate(-45deg); }
 
-.line-after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .contact-page-form h1:after,
-.contact-page-form h2:after {
+.line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .contact-page-form h1:after,
+.contact-page-form h2:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after {
   content: "";
   position: relative;
   display: block;
@@ -606,9 +651,9 @@ h6 {
   transition-property: width;
   transition-duration: 1s; }
 
-.line-after:hover, .daily-menu h3:hover:after, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after, .contact-page-form h1:hover:after,
-.contact-page-form h2:hover:after {
-  width: 80px; }
+.line-after:hover, .nav-menu li:hover:after, .daily-menu h3:hover:after, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after, .contact-page-form h1:hover:after,
+.contact-page-form h2:hover:after, .about-our-restaurant-text h1:hover:after, .about-our-chefs h2:hover:after {
+  width: 2.5rem; }
 
 /* Blog Home page*/
 .blog-home {
@@ -641,9 +686,17 @@ h6 {
 .blog-section-btn {
   position: absolute;
   top: -7em;
-  left: 30%; }
+  left: 30%;
+  display: none;
+  background-color: #2C3242;
+  padding: 1em 1em;
+  color: #F1F1F1;
+  border-radius: 5px; }
 
-.blog-section-btn:hover {
+.blog-section:hover {
+  opacity: .9; }
+
+.blog-section:hover .blog-section-btn {
   display: block; }
 
 .blog-section-text {
@@ -702,6 +755,9 @@ h6 {
   background-color: #42475C;
   font-style: italic; }
 
+.btn-newsletter {
+  padding: .55em; }
+
 /*Menu*/
 .menu-restaurant {
   background-color: #0F0F0F;
@@ -752,7 +808,7 @@ h6 {
 
 .menu-item-title {
   font-size: 1.5em;
-  color: #C47830;
+  color: #F1F1F1;
   border-bottom: 1px dotted #87723F; }
 
 .menu-item-description {
@@ -791,8 +847,7 @@ h6 {
   display: block;
   padding: .5em 0; }
 
-#contact-form input,
-.newsletter-form input {
+#contact-form input {
   padding: .4em;
   width: 100%; }
 
@@ -820,6 +875,52 @@ h6 {
 .form-button {
   margin-left: 6em;
   cursor: pointer; }
+
+/*About us page*/
+.about-our-restaurant {
+  margin-top: 2em; }
+
+.about-our-restaurant-text {
+  align-items: center;
+  margin-left: -.6em;
+  color: #2C3242;
+  padding: 0 2rem; }
+
+.about-our-restaurant-text h1 {
+  text-align: center; }
+
+.about-our-restaurant-text h1:after {
+  background-color: #2C3242; }
+
+.about-our-restaurant-text p {
+  display: -webkit-flex;
+  display: flex;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  min-height: 15em;
+  align-items: center; }
+
+.about-our-chefs {
+  background-color: #87723F;
+  overflow: hidden;
+  color: #F1F1F1;
+  padding: 3em 0; }
+
+.about-our-chefs h2 {
+  text-align: center;
+  color: #0F0F0F; }
+
+.about-our-chefs h2:after {
+  background-color: #F1F1F1; }
+
+/*Newsletter*/
+.newsletter-input {
+  padding: .4em;
+  border-radius: 3px;
+  border: 0;
+  height: 1.2rem;
+  width: 105%;
+  margin-right: 10rem; }
 
 ul li {
   color: #87723F; }

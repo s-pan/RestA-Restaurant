@@ -6,12 +6,15 @@ $color-5: #C47830;
 $color-6: #F1F1F1;
 $color-7: #FFFFFF;
 
-
 body {
    font-family:Lora, sans-serif, Tahoma;
    font-size:16px;
    color:$color-1;
    background:$color-6;
+}
+
+main{
+	padding-top:3.5rem;
 }
 
 
@@ -45,16 +48,22 @@ body {
 
 .nav-menu{
 	width:100%;
-	border:1px solid white;
 }
 
 .top-content {
-	background-image:url("images/food.jpg");
-	background-size:100%;
-	background-repeat: no-repeat;
-	height:500px;
+  background-color:$color-6;
+  overflow:hidden;
+}
+
+.welcome{
+  	background-image:url("images/food.jpg");
+	  background-size:100%;
+	  background-repeat: no-repeat;
     background-attachment: fixed;
-  }
+    background-origin: content-box;
+    height:35rem;
+    margin-top:1em;
+}
 
 .home-page-icons{
     height:100px;
@@ -64,6 +73,7 @@ body {
 #logo{
 	font-size:3em;
 	overflow:hidden;
+	color:$color-6;
 }
 
 

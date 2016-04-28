@@ -15,18 +15,19 @@
             <header class="container logo-menu">
             	<div class="row">
             	    <div class="col-4">
-            			<a id="logo" href="index.html">Restaurant</a>
+            			<a id="logo" href="index.html">RestA</a>
+            			<small>Our restaurant</small>
             		</div>
             		<div class="col-8">
             			<nav class="nav-menu">
             				<ul class="nav-menu-items">
-            					<li><a class="btn btn-default" href="index.html">Home</a></li>
-            					<li><a class="btn btn-default" href="menu.html">Menu</a></li>
-            					<li><a class="btn btn-default" href="gallery.html">Gallery</a></li>
-            					<li><a class="btn btn-default" href="reservation.html">Reservation</a></li>
-            					<li><a class="btn btn-default" href="about-us.html">About us</a></li>
-            					<li><a class="btn btn-default" href="blog.html">Blog</a></li>
-            					<li><a class="btn btn-default" href="contact.html">Contacts</a></li>
+            					<li><a class="nav-menu-item" href="index.html">Home</a></li>
+            					<li><a href="menu.html">Menu</a></li>
+            					<li><a href="gallery.html">Gallery</a></li>
+            					<li><a href="reservation.html">Reservation</a></li>
+            					<li><a href="about-us.html">About us</a></li>
+            					<li><a href="blog.html">Blog</a></li>
+            					<li><a href="contact.html">Contacts</a></li>
             				</ul>
             			</nav>
             		</div>        
@@ -34,11 +35,10 @@
             </header>
             <main class="container">
                 <section class="row top-content">
-                    <div class="col-sm-12 col-7">
+                    <div class="col-sm-12 col-7 welcome">
                         <h1 class="box-shadow">Welcome to our Restaurant</h1>
                     </div>
                     <div class="col-3 daily-menu box-shadow">
-                        
                         <h3><i class="fa fa-cutlery" aria-hidden="true"></i> Lunch menu</h3>
                         <h6>Starters</h6>
                         <p class="daily-menu-item">Roast onion and tomato consommé</p>
@@ -53,26 +53,7 @@
                         <p class="daily-menu-item">Poussin breast and thigh meat rissol</p>
                     </div>
                 </section>   
-                <section class="container">
-                    <div class="row">
-                        <div class="home-page-icons">
-                            <div class="col-3">
-                                <a href="#"><i class="fa fa-bars fa-3x" aria-hidden="true">Menu</i>
-                                </a>
-                            </div>
-                            <div class="col-3"> 
-                                <a href="#"><i class="fa fa-camera fa-3x" aria-hidden="true">Gallery</i>
-                                </a>
-                            </div>
-                            <div class="col-3"> 
-                                <span>Menu</span>
-                            </div>
-                            <div class="col-3"> 
-                                <span>Menu</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <section class="container about-us-home">
                     <div class="row ">
                         <div class="col-6">
@@ -105,7 +86,7 @@
                            <div class="blog-section box-shadow">
                                 <img class="img-width" src="images/sushi.jpg">
                                 <div class="button-blog">
-                                    <a href="#" class="btn blog-section-btn box-shadow">See more</a>
+                                    <a href="#" class="blog-section-btn box-shadow">See more</a>
                                 </div>
                                 <div class="blog-section-text">
                                     <h6>Sushi</h6>
@@ -117,6 +98,9 @@
                         <div class="col-4">
                            <div class="blog-section box-shadow">
                                 <img class="img-width" src="images/seafood.jpg">
+                                <div class="button-blog">
+                                    <a href="#" class="blog-section-btn box-shadow">See more</a>
+                                </div>
                                 <div class="blog-section-text">
                                     <h6>Seafood</h6>
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -127,6 +111,9 @@
                         <div class="col-4">
                             <div class="blog-section box-shadow">
                                 <img class="img-width" src="images/pizza.jpg">
+                                <div class="button-blog">
+                                    <a href="#" class="blog-section-btn box-shadow">See more</a>
+                                </div>
                                 <div class="blog-section-text">
                                     <h6>Pizza</h6>
                                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -167,19 +154,19 @@
                     <div class="col-sm-6 col-2">
                         <h5>Contact us</h5>
                            <ul>
-                               <li>Bath, UK</li>
-                               <li>0711 111 111</li>
-                               <li>email@email.com</li>
+                               <li><i class="fa fa-map-marker" aria-hidden="true"></i> Bath, UK</li>
+                               <li><i class="fa fa-phone" aria-hidden="true"></i> 0711 111 111</li>
+                               <li><i class="fa fa-envelope-o" aria-hidden="true"></i> email@email.com</li>
                            </ul>
                     </div>
                     <div class="col-sm-12 col-3">
                         <h5>Newsletter</h5>
                         <form action="" class="newsletter-form">
-                            <div class="col-sm-6 col-10">
-                                <input type="email" placeholder="E-mail">
+                            <div class="col-sm-6 col-9">
+                                <input type="email" placeholder="E-mail" class="newsletter-input">
                             </div>
-                            <div class="col-sm-6 col-2">
-                            <input type="button" value="Send" class="btn btn-default">
+                            <div class="col-sm-6 col-3">
+                            <input type="button" value="Send" class="btn btn-default btn-newsletter">
                             </div>
                         </form>
                     </div>
