@@ -51,7 +51,7 @@ main{
 }
 
 .top-content {
-  background-color:$color-6;
+  background-image:url("images/back-1.png");
   overflow:hidden;
 }
 
@@ -101,3 +101,18 @@ main{
 input[type=button]{
 	cursor:pointer;
 }
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.padding{
+  padding:1rem;
+}
+

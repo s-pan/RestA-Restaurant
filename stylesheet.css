@@ -82,7 +82,7 @@ main {
   width: 100%; }
 
 .top-content {
-  background-color: #F1F1F1;
+  background-image: url("images/back-1.png");
   overflow: hidden; }
 
 .welcome {
@@ -120,6 +120,17 @@ main {
 
 input[type=button] {
   cursor: pointer; }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.flex-col {
+  flex-direction: column; }
+
+.padding {
+  padding: 1rem; }
 
 .col-xs-1 {
   width: 8.33333%;
@@ -526,7 +537,7 @@ h6 {
 
 /*Header*/
 .logo-menu {
-  border-bottom: 2px solid #C47830;
+  border-bottom: 4px solid #C47830;
   position: fixed;
   z-index: 10000; }
 
@@ -554,29 +565,36 @@ h6 {
   text-align: center;
   color: #2C3242; }
 
-.daily-menu:before {
+.daily-wrapper:before {
   content: "";
   position: relative;
   display: block;
   margin: auto;
   width: 5em;
   height: 5em;
-  border-left: 3px solid;
-  border-bottom: 3px solid;
+  border-left: 3px solid #C47830;
+  border-bottom: 3px solid #C47830;
   border-radius: 5px;
   border-shadow: 0px 2px 5px 0px #0F0F0F;
   transform: rotate(135deg);
-  top: -3.5em; }
+  top: 5em; }
 
 .daily-menu {
-  position: relative;
   display: block;
+  position: relative;
   background-color: #0F0F0F;
-  color: #C47830;
+  color: #F1F1F1;
+  font-family: Indie Flower;
+  font-size: 1.2rem;
   border-radius: 2px;
   margin: 5rem 0 0 5rem;
   border: 3px solid #000;
-  outline: 10px solid #C47830; }
+  outline: 10px solid #C47830;
+  box-shadow: 12px 12px 10px 4px grey;
+  top: -2rem; }
+
+.daily-menu * {
+  position: relative; }
 
 .daily-menu h3,
 .daily-menu h6 {
@@ -585,6 +603,10 @@ h6 {
 
 .daily-menu h3:after {
   background-color: #87723F; }
+
+.daily-menu-item {
+  padding: .2rem 0;
+  text-align: center; }
 
 /*Home page icons*/
 .home-page-icons {
@@ -598,17 +620,16 @@ h6 {
   height: auto; }
 
 .about-us-info {
+  display: inline-block;
   background: #87723F;
   position: relative;
   top: 2rem;
-  left: -10%;
   color: #F1F1F1;
   border: 1px solid #F1F1F1;
   padding: 1em .5em;
   text-align: justify;
   font-size: 1.1em;
-  line-height: 1.2em;
-  overflow: hidden; }
+  line-height: 1.2em; }
 
 .about-us-info h2 {
   text-align: center;
@@ -639,8 +660,7 @@ h6 {
   border-shadow: 0px 2px 5px 0px #0F0F0F;
   transform: rotate(-45deg); }
 
-.line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .contact-page-form h1:after,
-.contact-page-form h2:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after {
+.line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after {
   content: "";
   position: relative;
   display: block;
@@ -651,8 +671,7 @@ h6 {
   transition-property: width;
   transition-duration: 1s; }
 
-.line-after:hover, .nav-menu li:hover:after, .daily-menu h3:hover:after, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after, .contact-page-form h1:hover:after,
-.contact-page-form h2:hover:after, .about-our-restaurant-text h1:hover:after, .about-our-chefs h2:hover:after {
+.line-after:hover, .nav-menu li:hover:after, .daily-menu h3:hover:after, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after, .about-our-restaurant-text h1:hover:after, .about-our-chefs h2:hover:after, .res-description h1:hover:after, .blog-page h1:hover:after {
   width: 2.5rem; }
 
 /* Blog Home page*/
@@ -686,7 +705,6 @@ h6 {
 .blog-section-btn {
   position: absolute;
   top: -7em;
-  left: 30%;
   display: none;
   background-color: #2C3242;
   padding: 1em 1em;
@@ -694,11 +712,18 @@ h6 {
   border-radius: 5px; }
 
 .blog-section:hover {
-  opacity: .9; }
+  opacity: 0.8; }
 
 .blog-section:hover .blog-section-btn {
-  display: block; }
+  display: block;
+  animation: move 1s linear forwards;
+  opacity: 1; }
 
+@keyframes move {
+  0% {
+    transform: tranaslateX(50%); }
+  100% {
+    transform: translateX(120%); } }
 .blog-section-text {
   padding: 1em 2em;
   text-align: center;
@@ -758,6 +783,10 @@ h6 {
 .btn-newsletter {
   padding: .55em; }
 
+.form-button {
+  margin-left: 7.5rem;
+  cursor: pointer; }
+
 /*Menu*/
 .menu-restaurant {
   background-color: #0F0F0F;
@@ -769,16 +798,18 @@ h6 {
   width: 28px;
   height: 28px;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 1rem;
   font-weight: bold;
-  padding: 2rem;
+  padding: 2.5rem;
   border: 2px dotted #F1F1F1;
   transform: rotate(45deg); }
 
 .menu-restaurant span {
   position: absolute;
-  left: 0px;
-  transform: rotate(-45deg); }
+  left: 0.1rem;
+  top: 1.7rem;
+  transform: rotate(-45deg);
+  text-align: center; }
 
 .menu-restaurant-items li {
   color: #F1F1F1;
@@ -808,7 +839,7 @@ h6 {
 
 .menu-item-title {
   font-size: 1.5em;
-  color: #F1F1F1;
+  color: #C47830;
   border-bottom: 1px dotted #87723F; }
 
 .menu-item-description {
@@ -832,13 +863,6 @@ h6 {
   display: none; }
 
 /*Contact*/
-.contact-page-form {
-  margin: 150px; }
-
-.contact-page-form h1:after,
-.contact-page-form h2:after {
-  background-color: #2C3242; }
-
 .contact-address {
   padding: 1em 0;
   font-size: 1.2em; }
@@ -867,24 +891,23 @@ h6 {
   transform: translateY(-5em); }
 
 .contact-page-form {
-  margin-top: 20em; }
+  margin-top: 3rem; }
 
 .map-location {
-  margin-top: 4em; }
-
-.form-button {
-  margin-left: 6em;
-  cursor: pointer; }
+  margin-top: 3em; }
 
 /*About us page*/
 .about-our-restaurant {
+  background-image: url("images/food.jpg");
+  background-size: 100%;
   margin-top: 2em; }
 
 .about-our-restaurant-text {
   align-items: center;
   margin-left: -.6em;
   color: #2C3242;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  height: 29.5rem; }
 
 .about-our-restaurant-text h1 {
   text-align: center; }
@@ -900,11 +923,17 @@ h6 {
   min-height: 15em;
   align-items: center; }
 
+.our-chefs {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .about-our-chefs {
   background-color: #87723F;
-  overflow: hidden;
+  margin-top: -.5rem;
   color: #F1F1F1;
-  padding: 3em 0; }
+  padding: 3em 0;
+  overflow: hidden; }
 
 .about-our-chefs h2 {
   text-align: center;
@@ -922,6 +951,87 @@ h6 {
   width: 105%;
   margin-right: 10rem; }
 
+/*Reservation*/
+.res-form {
+  padding: 3rem 0; }
+
+.res-description {
+  background-color: #87723F;
+  padding: 6rem 0;
+  margin: 0 0 -.4rem -.5rem;
+  color: #F1F1F1;
+  text-align: center; }
+
+.res-description h1:after {
+  background-color: #F1F1F1; }
+
+.form-input {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  border-bottom: 1px dotted #2C3242;
+  background-color: transparent; }
+
+.form-input:focus {
+  border: 1px dotted #2C3242;
+  background-color: #ffffff;
+  border-radius: 3px; }
+
+.label-form {
+  font-size: 1.4rem; }
+
+select[name="hours"],
+select[name="minutes"],
+select[name="date"],
+input::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: italic; }
+
+.choosen {
+  color: #87723F; }
+
+/*404*/
+.not-found {
+  margin-top: 3rem;
+  text-align: center;
+  min-height: 20rem; }
+
+.not-found h1 {
+  padding: 5rem; }
+
+/*Blog page*/
+.blog-page {
+  margin-top: 3rem; }
+
+.blog-item-details {
+  color: #42475C;
+  background-color: #ffffff;
+  margin-top: -.8rem;
+  padding: 0 .2rem .5rem 0;
+  overflow: hidden; }
+
+.blog-item-details * {
+  padding: .5rem; }
+
+.img-blog {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 21rem;
+  padding: 0px; }
+
+.blog-page h2 {
+  text-align: center; }
+
+.blog-page h1 {
+  text-align: center;
+  padding: 2rem; }
+
+.blog-page h1:after {
+  background-color: #87723F; }
+
+@media (min-width: 768px) {
+  .about-us-info {
+    left: -10%; } }
 ul li {
   color: #87723F; }
 

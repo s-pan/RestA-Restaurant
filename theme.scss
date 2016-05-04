@@ -24,10 +24,27 @@ h6 {
 	font-size: 1.2em;
 }
 
+
+/*Header*/
+
+.logo-menu{
+	border-bottom:4px solid $color-5;
+	position:fixed;
+	z-index:10000;
+
+}
+
 .nav-menu li{
 	display:inline-block;
 	font-size:1.2rem;
 	width:auto;
+	padding:1rem;
+    color:$color-6;
+}
+
+.nav-menu li:after{
+	@extend .line-after;
+	background-color:$color-1;
 }
 
 .nav-menu-items{
@@ -39,19 +56,46 @@ h6 {
 .top-content h1{
 	display:block;
 	background-color:$color-6;
-	margin-top:10rem;
+	transform: translateY(8rem);
+	margin:auto;
 	padding:.5rem;
-	width:90%;
+	width:95%;
 	text-align:center;
+	color:$color-2;
+}
+
+.daily-wrapper:before{
+	content:"";
+	position:relative;
+	display:block;
+	margin:auto;
+	width:5em;
+	height:5em;
+	border-left:3px solid $color-5;
+	border-bottom:3px solid $color-5;
+	border-radius:5px;
+	border-shadow: 0px 2px 5px 0px $color-3;
+	transform:rotate(135deg);
+	top:5em;
 }
 
 .daily-menu{
     display:block;
-	background-color:$color-3;
-	color:$color-5;
+    position:relative;
+    background-color:$color-3;	
+    color:$color-6;
+    font-family:Indie Flower;
+    font-size:1.2rem;
 	border-radius:2px;
-	opacity:.9;
-	margin:2rem 0 0 5rem;
+	margin:5rem 0 0 5rem;
+	border:3px solid #000;
+	outline:10px solid $color-5;
+	box-shadow:12px 12px 10px 4px grey;
+	top:-2rem;
+}
+
+.daily-menu *{
+	position:relative;
 }
 
 .daily-menu h3,
@@ -63,6 +107,11 @@ h6 {
 .daily-menu h3:after{
 	@extend .line-after;
     background-color:$color-1;
+}
+
+.daily-menu-item{
+	padding:.2rem 0;
+	text-align:center;
 }
 
 
@@ -83,19 +132,16 @@ h6 {
 }
 
 .about-us-info {
+    display:inline-block;
 	background:$color-1;
 	position:relative;
-	top:30%;
-	left:-10%;
+	top:2rem;
 	color:$color-6;
 	border:1px solid $color-6;
-	margin:auto;
 	padding:1em .5em;
     text-align:justify;
     font-size:1.1em;
     line-height:1.2em;
-    overflow:hidden;
- 
 }
 
 .about-us-info h2 {
@@ -108,6 +154,16 @@ h6 {
 	border-bottom-color:$color-2;
 }
 
+.chef-img img{
+	border-radius:50%;
+	width:8rem;
+	height:8rem;
+
+}
+
+.chef-name{
+	font-size:2rem;
+}
 
 /*Interface*/
 
@@ -138,7 +194,7 @@ h6 {
  }
 
 .line-after:hover{
-	width:80px;
+	width:2.5rem;
 }
 
 /* Blog Home page*/
@@ -183,11 +239,30 @@ h6 {
 .blog-section-btn {
 	position:absolute;
 	top:-7em;
-	left:30%;
+ 	display:none;
+	background-color:$color-2;
+	padding:1em 1em;
+	color:$color-6;
+	border-radius:5px;
 }
 
-.blog-section-btn:hover{
+.blog-section:hover{
+	opacity:0.8;
+}
+
+.blog-section:hover .blog-section-btn{
 	display:block;
+	animation: move 1s linear forwards;
+	opacity:1;
+}
+
+@keyframes move{
+	0%{
+	   transform:tranaslateX(50%);
+	}
+	100%{
+	   transform:translateX(120%);
+	}
 }
 
 .blog-section-text{
@@ -259,6 +334,14 @@ h6 {
 	font-style:italic;
 }
 
+.btn-newsletter{
+   padding:.55em;
+}
+
+.form-button{
+	margin-left:7.5rem;
+	cursor:pointer;
+}
 
 
 /*Menu*/
@@ -274,17 +357,19 @@ h6 {
     width:28px;
     height:28px;
     margin:auto;
-    margin-top:15px;
+    margin-top:1rem;
 	font-weight:bold;
-	padding:2rem;
+	padding:2.5rem;
 	border:2px dotted $color-6;
 	transform:rotate(45deg);
 }
 
 .menu-restaurant span{
     position:absolute;
-    left:0px;
+    left:0.1rem;
+    top:1.7rem;
     transform:rotate(-45deg);
+    text-align:center;
 }
 
 .menu-restaurant-items li {
@@ -355,16 +440,6 @@ h6 {
 
 /*Contact*/
 
-.contact-page-form{
-    margin:150px;
-}
-
-.contact-page-form h1:after,
-.contact-page-form h2:after{
-	@extend .line-after;
-	background-color:$color-2;
-}
-
 .contact-address{
 	padding:1em 0;
 	font-size:1.2em;
@@ -375,8 +450,7 @@ h6 {
 	padding:.5em 0;
 }
 
-#contact-form input,
-.newsletter-form input{
+#contact-form input{
 	padding:.4em;
 	width:100%;
 }
@@ -400,14 +474,188 @@ h6 {
 }
 
 .contact-page-form{
-	margin-top:20em;
+	margin-top:3rem;
 }
 
 .map-location{
-	margin-top:4em;
+	margin-top:3em;
 }
 
-.form-button{
-	margin-left:6em;
-	cursor:pointer;
+/*About us page*/
+
+.about-our-restaurant{
+  	background-image:url("images/food.jpg");
+    background-size:100%;
+	margin-top:2em;
+}
+
+.about-our-restaurant-text{
+    align-items:center;
+	margin-left:-.6em;
+	color:$color-2;
+	padding: 0 2rem;
+	height: 29.5rem;
+}
+
+.about-our-restaurant-text h1{
+	text-align:center;
+}
+
+.about-our-restaurant-text h1:after{
+	@extend .line-after;
+	background-color:$color-2;
+}
+
+.about-our-restaurant-text p{
+    display: -webkit-flex;
+    display:  flex;
+    font-size:1.2em;
+	line-height:1.5em;
+	min-height:15em;
+	align-items:center;
+}
+
+.our-chefs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-our-chefs{
+	background-color:$color-1;
+	margin-top:-.5rem;
+	color:$color-6;
+	padding:3em 0;
+	overflow:hidden;
+}
+
+.about-our-chefs h2{
+	text-align:center;
+    color:$color-3;
+}
+
+.about-our-chefs h2:after{
+	@extend .line-after;
+	background-color:$color-6;
+}
+
+/*Newsletter*/
+
+.newsletter-input{
+	padding:.4em;
+	border-radius:3px;
+	border:0;
+	height:1.2rem;
+	width:105%;
+	margin-right:10rem;
+}
+
+/*Reservation*/
+
+.res-form{
+   padding:3rem 0;
+}
+
+.res-description{
+	background-color:$color-1;
+	padding:6rem 0;
+	margin:0 0 -.4rem -.5rem;
+	color:$color-6;
+	text-align:center;
+}
+
+.res-description h1:after{
+	@extend .line-after;
+    background-color:$color-6;
+}
+
+.form-input{
+	line-height:1.5rem;
+	font-size:1.2rem;
+	border:2px solid transparent;
+	border-bottom:1px dotted $color-2;
+	background-color:transparent;
+}
+
+.form-input:focus{
+	border:1px dotted $color-2;
+	background-color:#ffffff;
+	border-radius:3px;
+}
+
+.label-form{
+	font-size:1.4rem;
+}
+
+select[name="hours"],
+select[name="minutes"],
+select[name="date"],
+input::-webkit-input-placeholder {
+	color:#ccc;
+	font-style:italic;
+}
+
+.choosen{
+	color:$color-1;
+}
+
+/*404*/
+
+.not-found{
+	margin-top:3rem;
+	text-align:center;
+	min-height:20rem;
+}
+
+.not-found h1{
+	padding:5rem;
+}
+
+/*Blog page*/
+
+.blog-page{
+	margin-top:3rem;
+}
+
+.blog-item-details{
+    color:$color-4;
+    background-color:#ffffff;
+    margin-top:-.8rem;
+    padding:0 .2rem .5rem 0;
+    overflow:hidden;
+}
+
+.blog-item-details *{
+	padding:.5rem;
+}
+
+.img-blog{
+    box-sizing:border-box;
+	width:100%;
+	min-height:21rem;
+	padding:0px;
+}
+
+.blog-page h2{
+	text-align:center;
+}
+
+.blog-page h1{
+	text-align:center;
+	padding:2rem;
+}
+
+.blog-page h1:after{
+	@extend .line-after;
+	background-color:$color-1;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .about-us-info{
+	left:-10%;
+  }
 }
