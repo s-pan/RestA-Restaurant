@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         </head>
         <body>
-        <header class="container logo-menu box-shadow">
+         <header class="container logo-menu box-shadow">
                 <div class="row">
                     <div class="col-xs-8 col-sm-8 col-4">
                         <a id="logo" href="index.html">RestA</a><br>
@@ -49,86 +49,34 @@
                 </div>
             </header>
             <main class="container">
-                <div class="">
-                <section class="col-5">
-                    <div class="res-description">
-                         <h1 class="padding">Make a reservation</h1>
-                         <p class="padding">Would you like to find out our delicious dishes and great atmosphere?</p>
-                         <p class="padding">Make reservation</p>
-                         <img src="images/chef-pic.png">
-                    </div>
-                </section>
-                <section class="col-7">
-                    <div class="res-form">
-                        <form action="" method="post">
-                            <h2>Reservation details:</h2>
-                            <fieldset>
-                                <div class="row padding">
-                                    <label class="col-xs-4 col-sm-4 col-2 label-form flex" for="name">Name</label>                          
-                                    <input class="col-xs-8 col-sm-8 col-6 form-input" type="text" name="name" placeholder="Enter your name" autofocus>
-                                </div>
-                                <div class="row padding">
-                                    <label class="col-xs-4 col-sm-4 col-2 label-form flex" for="phone">Phone</label>
-                                    <input class="col-xs-8 col-sm-8 col-6 form-input" type="tel" name="phone" placeholder="Enter your phone">
-                                </div>
-                                <div class="row padding">
-                                    <label class="col-xs-4 col-sm-4 col-2 label-form flex" for="email">Email</label>
-                                    <input class="col-xs-8 col-sm-8 col-6 form-input" type="email" name="email" placeholder="Enter your email">
-                                </div>
-                                <div class="row padding">
-                                    <label class="col-xs-4 col-sm-4 col-2 label-form flex" for="guests">Guests</label>
-                                    <input class="col-xs-8 col-sm-8 col-6 form-input" type="text" name="guests" placeholder="Number of guests">
-                                </div>
-                                <div class="row padding">
-                                    <label class="col-xs-4 col-sm-4 col-2 label-form flex" for="date">Date</label>
-                                    <select class="col-xs-8 col-sm-8 col-6 form-input" type="text" name="date">
-                                        <option disabled selected>Choose date</option>
-                                        <option value="today" id="today" class="choosen"></option>
-                                        <option value="tomorrow" id="tomorrow"></option>
-                                        <option value="3days" id="3days"></option>
-                                        <option value="4days" id="4days"></option>
-                                        <option value="5days" id="5days"></option>
-                                    </select>
-                                </div>
-                                <div class="row padding">
-                                    <label class="col-xs-4 col-sm-4 col-2 label-form flex" for="time">Time</label>
-                                    <select class="col-xs-4 col-sm-4 col-3 form-input" type="text" name="hours">
-                                        <option value="hours" disabled selected>Hours</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                    </select>
-                                    <select class="col-xs-4 col-sm-4 col-3 form-input" type="text" name="minutes">
-                                        <option disabled selected>Minutes</option>
-                                        <option>00</option>
-                                        <option>10</option>
-                                        <option>20</option>
-                                        <option>30</option>
-                                        <option>40</option>
-                                        <option>50</option>
-                                    </select>
-                                </div>
-                                <div class="row padding">
-                                    <div class="col-xs-6 col-sm-6 col-4">
-                                       <input class="col-3 btn btn-blue form-button" type="button" value="Send">
-                                    </div>
-                                </div>
-
-                            </fieldset>
-                        </form>
-                    </div>
-                </section>
-                </div>
+                <div class="row margin-top">
+                    <section class="col-xs-12 col-sm-12 col-5">
+                        <div class="col-12">
+                            <img class="img-width" src="images/sushi.jpg">
+                        </div>
+                        <div class="col-12">
+                            <span>Date: 12/4/2016</span>
+                            <span>at 10:39</span>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-3">
+                                <a class="btn btn-blue box-shadow" id="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> <span >Facebook</span></a>
+                            </div><div class="col-1"></div>
+                            <div class="col-3">
+                                <a class="btn btn-blue box-shadow" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+                            </div><div class="col-1"></div>
+                            <div class="col-3">
+                                <a href="" class="btn btn-blue box-shadow" id="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i> Google Plus</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-xs-12 col-sm-12 col-7 blog-post-text">
+                        <h1 class="padding">Blog post title</h1>
+                        <p class="padding">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                        <p class="padding">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                    </section>
             </main>
-             <footer class="container">
+           <footer class="container">
                 <div class="footer-links">
                     <div class="row">
                     <div class="col-sm-6 col-2">

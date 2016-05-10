@@ -1,3 +1,5 @@
+/*Colors*/
+
 $color-1: #87723F;
 $color-2: #2C3242;
 $color-3: #0F0F0F;
@@ -6,49 +8,107 @@ $color-5: #C47830;
 $color-6: #F1F1F1;
 $color-7: #FFFFFF;
 
+$background-1: #87723F;
+$background-2: #2C3242;
+$background-3: #0F0F0F;
+$background-4: #42475C;
+$background-5: #C47830;
+$background-6: #F1F1F1;
+$background-7: #FFFFFF;
+
+.color-1{
+  color:$color-1;
+}
+
+.color-2{
+  color:$color-2;
+}
+
+.color-3{
+  color:$color-3;
+}
+
+.color-4{
+  color:$color-4;
+}
+
+.color-5{
+  color:$color-5;
+}
+
+.color-6{
+  color:$color-6;
+}
+
+.color-7{
+  color:$color-7;
+}
+
+.background-1{
+  background-color:$background-1;
+}
+
+.background-2{
+  background-color:$background-2;
+}
+
+.background-3{
+  background-color:$background-3;
+}
+
+.background-4{
+  background-color:$background-4;
+}
+
+.background-5{
+  background-color:$background-5;
+}
+
+.background-6{
+  background-color:$background-6;
+}
+
+.background-7{
+  background-color:$background-7;
+}
+
+/*Other*/
+
+.text-align-center{
+  text-align:center;
+}
+
+.position-relative{
+  position:relative;
+}
+
+.margin-auto{
+  margin:auto;
+}
+
+.display-block{
+  display:block;
+}
+
+
+/*Layout*/
+
 body {
-   font-family:Lora, sans-serif, Tahoma;
-   font-size:16px;
-   color:$color-1;
-   background:$color-6;
+  font-family:Lora, sans-serif, Tahoma;
+  font-size:16px;
+  color:$color-1;
+  background:$color-6;
 }
 
 main{
-	padding-top:3.5rem;
+	padding-top:4.5rem;
 }
 
-
-.container {
-    width:100%;
-    clear:both
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 100%;
-  }
-}
-
-.row {
-    width:100%;
-    box-sizing:border-box;
-    padding: 0 15px;
-    clear:both
-}
 
 .nav-menu{
 	width:100%;
 }
+
 
 .top-content {
   background-image:url("images/back-1.png");
@@ -84,15 +144,17 @@ main{
 
 
 #restaurant-menu{
-    left:100px;
-    width:10px;
-    height:50px;
+  left:100px;
+  width:10px;
+  height:50px;
 	background:url("images/icons.png") 200px 0;
 }
 
 .img-width{
 	width:100%;
 }
+
+
 
 .box-shadow{
     box-shadow: 0px 2px 5px 0px $color-3;

@@ -66,7 +66,7 @@ textarea {
 .row {
   width: 100%;
   box-sizing: border-box;
-  padding: 0 1rem;
+  padding: 0 15px;
   clear: both; }
 
 .col-prop, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
@@ -197,43 +197,7 @@ textarea {
     width: 91.66666%; }
 
   .col-12 {
-    width: 100%; }
-
-  .margin-left-1 {
-    margin-left: 8.33333%; }
-
-  .margin-left-2 {
-    margin-left: 16.66667%; }
-
-  .margin-left-3 {
-    margin-left: 25%; }
-
-  .margin-left-4 {
-    margin-left: 33.33333%; }
-
-  .margin-left-5 {
-    margin-left: 41.66666%; }
-
-  .margin-left-6 {
-    margin-left: 50%; }
-
-  .margin-left-7 {
-    margin-left: 58.33333%; }
-
-  .margin-left-8 {
-    margin-left: 66.66666%; }
-
-  .margin-left-9 {
-    margin-left: 75%; }
-
-  .margin-left-10 {
-    margin-left: 83.33333%; }
-
-  .margin-left-11 {
-    margin-left: 91.66666%; }
-
-  .margin-left-12 {
-    margin-left: 100%; } }
+    width: 100%; } }
 @media (min-width: 62em) {
   .col-prop-3, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
@@ -300,7 +264,7 @@ textarea {
 .color-7 {
   color: #FFFFFF; }
 
-.background-1, .nav-menu li:after, .nav-menu-items, .daily-menu h3:after, .about-us-info, .btn-default:hover, .about-our-chefs, .res-description, .blog-page h1:after, .gallery h1:after {
+.background-1, .nav-menu li:after, .nav-menu-items, .daily-menu h3:after, .about-us-info, .btn-default:hover, .about-our-chefs, .res-description, .blog-page h1:after {
   background-color: #87723F; }
 
 .background-2, .blog-section-btn, .btn-blue, .about-our-restaurant-text h1:after {
@@ -322,18 +286,18 @@ textarea {
   background-color: #FFFFFF; }
 
 /*Other*/
-.text-align-center, input[name=ham-menu]:checked + .nav-menu-items li, .top-content h1, .daily-menu h3,
+.text-align-center, input[type=checkbox]:checked + .nav-menu-items li, .top-content h1, .daily-menu h3,
 .daily-menu h6, .daily-menu-item, .about-us-info h2, .blog-home h2, .blog-section h6, .blog-section-text, .btn-blue, .menu-restaurant span, .menu-restaurant-items li, .menu-main-text h1,
 .menu-main-text h3, .about-our-restaurant-text h1, .about-our-chefs h2, .res-description, .not-found, .blog-page h2, .blog-page h1 {
   text-align: center; }
 
-.position-relative, .daily-wrapper:before, .daily-menu, .daily-menu *, .about-us-home, .about-us-info, .triangle, .about-us-info h2:after, .blog-home h2:after, .line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after, .gallery h1:after, .button-blog, .menu-restaurant h2, .menu-item {
+.position-relative, .daily-wrapper:before, .daily-menu, .daily-menu *, .about-us-home, .about-us-info, .triangle, .about-us-info h2:after, .blog-home h2:after, .line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after, .button-blog, .menu-restaurant h2, .menu-item {
   position: relative; }
 
-.margin-auto, .top-content h1, .daily-wrapper:before, .triangle, .about-us-info h2:after, .blog-home h2:after, .line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after, .gallery h1:after, .btn, .menu-restaurant h2 {
+.margin-auto, .top-content h1, .daily-wrapper:before, .triangle, .about-us-info h2:after, .blog-home h2:after, .line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after, .btn, .menu-restaurant h2 {
   margin: auto; }
 
-.display-block, input[name=ham-menu]:checked + .nav-menu-items li, .top-content h1, .daily-wrapper:before, .daily-menu, .triangle, .about-us-info h2:after, .blog-home h2:after, .line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after, .gallery h1:after, .blog-section:hover .blog-section-btn, .active-menu-items, .form-item {
+.display-block, input[type=checkbox]:checked + .nav-menu-items li, .top-content h1, .daily-wrapper:before, .daily-menu, .triangle, .about-us-info h2:after, .blog-home h2:after, .line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after, .blog-section:hover .blog-section-btn, .active-menu-items, .form-item {
   display: block; }
 
 /*Layout*/
@@ -437,13 +401,10 @@ h6 {
 .nav-menu-items {
   z-index: 11000; }
 
-input[name=ham-menu] + .nav-menu-items li {
+input[type=checkbox] + .nav-menu-items li {
   display: none; }
 
 input[name=ham-menu] {
-  display: none; }
-
-.expand-menu {
   display: none; }
 
 /*Home page top content*/
@@ -521,7 +482,7 @@ input[name=ham-menu] {
   border-shadow: 0px 2px 5px 0px #0F0F0F;
   transform: rotate(-45deg); }
 
-.line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after, .gallery h1:after {
+.line-after, .nav-menu li:after, .daily-menu h3:after, .menu-restaurant-items li:after, .menu-main-text h3:after, .about-our-restaurant-text h1:after, .about-our-chefs h2:after, .res-description h1:after, .blog-page h1:after {
   content: "";
   width: 20px;
   height: 1px;
@@ -529,7 +490,7 @@ input[name=ham-menu] {
   transition-property: width;
   transition-duration: 1s; }
 
-.line-after:hover, .nav-menu li:hover:after, .daily-menu h3:hover:after, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after, .about-our-restaurant-text h1:hover:after, .about-our-chefs h2:hover:after, .res-description h1:hover:after, .blog-page h1:hover:after, .gallery h1:hover:after {
+.line-after:hover, .nav-menu li:hover:after, .daily-menu h3:hover:after, .menu-restaurant-items li:hover:after, .menu-main-text h3:hover:after, .about-our-restaurant-text h1:hover:after, .about-our-chefs h2:hover:after, .res-description h1:hover:after, .blog-page h1:hover:after {
   width: 2.5rem; }
 
 /* Blog Home page*/
@@ -798,10 +759,6 @@ input::-webkit-input-placeholder {
 .blog-page h1 {
   padding: 2rem; }
 
-/*Gallery*/
-.img-hover img:hover {
-  zoom: 2; }
-
 /*Blog post*/
 .margin-top {
   margin-top: 3rem; }
@@ -814,19 +771,5 @@ input::-webkit-input-placeholder {
 @media (min-width: 768px) {
   .about-us-info {
     left: -10%; } }
-@media (min-width: 992px) {
-  .expand-menu {
-    display: block; }
 
-  .nav-menu {
-    visibility: hidden; }
-
-  .nav-menu-items-expand li {
-    display: inline-block;
-    font-size: 1.6rem;
-    padding: 0 .8rem; }
-
-  .nav-menu-items-expand li:hover {
-    color: #F1F1F1; } }
-
-/*# sourceMappingURL=stylesheet.css.map */
+/*# sourceMappingURL=style.map */

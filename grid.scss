@@ -1,53 +1,106 @@
+.container {
+    width:100%;
+    clear:both
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+.row {
+    width:100%;
+    box-sizing:border-box;
+    padding: 0 1rem;
+    clear:both
+}
+
 $col-width: 8.333333%;
 
+.col-prop{
+    float:left;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding:5px;
+}
 
 @for $i from 1 to 13 {
 	.col-xs-#{$i} {
 	    width: ($col-width * $i);
-	    float:left;
-	    -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-	    padding:5px;
+	    @extend .col-prop;
 	}
 }
 
 @media (min-width: 34em) {
-    @for $i from 1 to 13 {
-	    .col-sm-#{$i} {
-	        width: ($col-width * $i);
-	        float:left;
-	        -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-	        padding:5px;
+    .col-prop-1{
+        float:left;
+	    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+	    padding:5px;
+    }
+    
+    @for $g from 1 to 13 {
+	    .col-sm-#{$g} {
+	        width: ($col-width * $g);
+	         @extend .col-prop-1;
 	    }
     }
+
+   
 }
 
 @media (min-width: 48em) {
+    .col-prop-2{
+        float:left;
+	    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+	    padding:5px;
+    }
+ 
     @for $i from 1 to 13 {
 	    .col-#{$i} {
 	        width: ($col-width * $i);
-	        float:left;
-	        -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-	        padding:5px;
+	        @extend .col-prop-2;
 	    }
     }
+
+     @for $i from 1 to 13 {
+	.margin-left-#{$i} {
+	    margin-left: ($col-width * $i);
+	}
+	}
 }
 
 @media (min-width: 62em) {
+    .col-prop-3{
+       float:left;
+	   -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+	   padding:5px;
+    } 
+
     @for $i from 1 to 13 {
 	    .col-lg-#{$i} {
+	        @extend .col-prop-3;
 	        width: ($col-width * $i);
-	        float:left;
-	        -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-	        padding:5px;
 	    }
     }
+
 }
 

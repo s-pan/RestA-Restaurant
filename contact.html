@@ -12,13 +12,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic" rel="stylesheet" type="text/css">
         </head>
         <body>
-<header class="container logo-menu">
+         <header class="container logo-menu box-shadow">
                 <div class="row">
-                    <div class="col-4">
-                        <a id="logo" href="index.html">Restaurant</a>
+                    <div class="col-xs-8 col-sm-8 col-4">
+                        <a id="logo" href="index.html">RestA</a><br>
+                        <small>Our restaurant</small>
                     </div>
-                    <div class="col-8">
+                    <div class="col-xs-4 col-sm-4 col-2">
                         <nav class="nav-menu">
+                            <label for="ham-menu"><i class="fa fa-bars fa-2x" aria-hidden="true"> Menu</i></label>
+                            <input type="checkbox" id="ham-menu" name="ham-menu">
                             <ul class="nav-menu-items">
                                 <li><a class="nav-menu-item" href="index.html">Home</a></li>
                                 <li><a href="menu.html">Menu</a></li>
@@ -29,16 +32,29 @@
                                 <li><a href="contact.html">Contacts</a></li>
                             </ul>
                         </nav>
-                    </div>        
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-8 expand-menu">
+                        <nav class="nav-menu-expand">
+                            <ul class="nav-menu-items-expand">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="reservation.html">Reservation</a></li>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </header>
             <main class="container">
                 <div class="row">
-                    <section class="col-12 contact-page">
-                        <div class="col-6 map-location">
-                            <iframe class="box-shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.255828056624!2d-2.361247184665295!3d51.379976027833564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718111740d6f5b%3A0x640fd7aecb743685!2s16-18+Stall+St%2C+Bath%2C+Bath+and+North+East+Somerset+BA1+1QB!5e0!3m2!1sbg!2suk!4v1461003427479" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <section class="contact-page">
+                        <div class="col-xs-12 col-sm-12 col-6 map-location">
+                            <iframe class="box-shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.255828056624!2d-2.361247184665295!3d51.379976027833564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718111740d6f5b%3A0x640fd7aecb743685!2s16-18+Stall+St%2C+Bath%2C+Bath+and+North+East+Somerset+BA1+1QB!5e0!3m2!1sbg!2suk!4v1461003427479" width="90%" height="400rem" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
-                        <div class="col-6 contact-page-form" >
+                        <div class="col-xs-12 col-sm-12 col-6 contact-page-form" >
                             <h1>Contact</h1>
                             <address>
                                 <p class="contact-address"><i class="fa fa-location-arrow" aria-hidden="true"></i> Address: Bath, UK</p>
@@ -47,28 +63,28 @@
                             </address>
                             <form action="" id="contact-form">
                                 <fieldset>
-                                    <div class="form-item">
+                                    <div class="col-xs-12 col-sm-12 col-12 form-item">
                                        <label for="name">Name</label>
                                        <input type="text" name="name">
                                     </div>
-                                    <div class="form-item">
+                                    <div class="ol-xs-12 col-sm-12 col-12  form-item">
                                         <label for="email">E-mail</label>
                                         <input type="email" name="email">
                                     </div>
-                                    <div class="form-item">
+                                    <div class="ol-xs-12 col-sm-12 col-12  form-item">
                                         <label>Phone</label>
                                         <input type="tel" name="email">
                                     </div>
-                                    <div class="form-item">
+                                    <div class="ol-xs-12 col-sm-12 col-12  form-item">
                                         <label>Subject</label>
                                         <input type="text" name="subject">
                                     </div>
-                                    <div class="form-item" id="textarea">
+                                    <div class="ol-xs-12 col-sm-12 col-12  form-item" id="textarea">
                                        <label class="text-textarea">Text</label>
                                        <textarea name="textarea" cols="21" rows="10";></textarea>
                                     </div>
                                 </fieldset>
-                                <div class="col-6">
+                                <div class="col-xs-6 col-sm-6col-6">
                                 <button type="button" class="btn btn-default form-button">Submit</button>
                                 </div>
                             </form>                  
