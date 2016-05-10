@@ -1,3 +1,5 @@
 # RestA-Restaurant
 
-HTML theme for restaurants.
+Free HTML theme for restaurants.
+
+HTML, CSS, jQuery, Sass, Responsive.
